@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ddd;
+            scroll-behavior: smooth; /* Smooth scrolling effect */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #f44336; /* Slight red color */
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #f44336;
+            color: #fff;
+        }
+
+        .container {
+            margin-top: 70px; /* Space for fixed header */
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            background: #2c2c2c;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            color: #f44336; /* Slight red color */
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ddd;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <div class="section-title">
+                <h1>Home</h1>
+            </div>
+            <p>Welcome to my portfolio website. Here you can find information about my work and experience.</p>
+        </section>
+
+        <section id="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <p>I am a passionate web developer with experience in building beautiful and functional websites. My skills include HTML, CSS, JavaScript, and more.</p>
+        </section>
+
+        <section id="work">
+            <div class="section-title">
+                <h2>Work</h2>
+            </div>
+            <p>Here are some of the projects I've worked on. [Include project details and links here.]</p>
+        </section>
+
+        <section id="contact">
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+            <p>Feel free to get in touch with me through the contact form below or via email.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
